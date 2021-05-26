@@ -55,9 +55,10 @@ pipeline {
         
              stage('Performance test') {
             steps {
-                // sh '''
+                sh '''
+                
+                '''
                 //     jmeter -n -t login.logout.jmx -l test1.csv -e -0 html-reports/
-                // '''
             }
         }
     }
