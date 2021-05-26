@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-07T06:39:20.395Z",
+    "end": "2021-05-07T06:39:23.893Z",
+    "duration": 3498,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea3e6aee-456e-42d5-b39a-567c11e57f06",
+      "title": "",
+      "fullFile": "cypress/integration/backend-auth.spec.js",
+      "file": "cypress/integration/backend-auth.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "65c8b687-4a93-4927-b3e5-ee2a1c8236f5",
+          "title": "Testing suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "#1 - Fetch clients",
+              "fullTitle": "Testing suite #1 - Fetch clients",
+              "timedOut": null,
+              "duration": 672,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelper.fetchClients(cy);\ncy.logoutSession(cy);",
+              "err": {},
+              "uuid": "6dbd3d05-7dae-48b0-a797-9f431a08447f",
+              "parentUUID": "65c8b687-4a93-4927-b3e5-ee2a1c8236f5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#2 - Create new client",
+              "fullTitle": "Testing suite #2 - Create new client",
+              "timedOut": null,
+              "duration": 579,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelper.createNewClient(cy, \"TestName\", \"TesterEmail@test.com\", \"123 123 123\");\ncy.logoutSession(cy);",
+              "err": {},
+              "uuid": "6709074b-5bd1-4744-93c9-5425ec83bcca",
+              "parentUUID": "65c8b687-4a93-4927-b3e5-ee2a1c8236f5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#3 - Edit existing client",
+              "fullTitle": "Testing suite #3 - Edit existing client",
+              "timedOut": null,
+              "duration": 1111,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelper.createNewClient(cy, \"EditTestName\", \"EditTesterEmail@test.com\", \"1337 1337\");\nclientHelper.editClient(cy);\ncy.logoutSession(cy);",
+              "err": {},
+              "uuid": "9a79bde9-663a-4b8b-a768-2efe3b0bc8a5",
+              "parentUUID": "65c8b687-4a93-4927-b3e5-ee2a1c8236f5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "#4 - Delete existing client",
+              "fullTitle": "Testing suite #4 - Delete existing client",
+              "timedOut": null,
+              "duration": 1095,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "clientHelper.createNewClient(cy, \"DeleteTestName\", \"DeleteTesterEmail@test.com\", \"444 555 666\");\nclientHelper.deleteLastClient(cy);\ncy.logoutSession(cy);",
+              "err": {},
+              "uuid": "db046385-6aed-411e-8b94-c81b7482b32f",
+              "parentUUID": "65c8b687-4a93-4927-b3e5-ee2a1c8236f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6dbd3d05-7dae-48b0-a797-9f431a08447f",
+            "6709074b-5bd1-4744-93c9-5425ec83bcca",
+            "9a79bde9-663a-4b8b-a768-2efe3b0bc8a5",
+            "db046385-6aed-411e-8b94-c81b7482b32f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3457,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

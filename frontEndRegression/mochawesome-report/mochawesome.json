@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-23T21:47:41.265Z",
+    "end": "2021-04-23T21:47:50.102Z",
+    "duration": 8837,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5602504e-2c3b-4ab4-a633-bf277db3f40e",
+      "title": "",
+      "fullFile": "cypress/integration/visual-regression.spec.js",
+      "file": "cypress/integration/visual-regression.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ae714241-331e-4162-bd68-02f03c8f0ec6",
+          "title": "Test suite - Visual regression",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "#1 Login & log out with existing user",
+              "fullTitle": "Test suite - Visual regression #1 Login & log out with existing user",
+              "timedOut": null,
+              "duration": 7099,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.percySnapshot('LoginPage');\nindexFuncs.loginWithValidUser(cy);\ndashboardFuncs.checkTitleAndHeader(cy);\ncy.percySnapshot('DashboardPage');\ndashboardFuncs.NavigateToRooms(cy);\nroomFuncs.NavigateToCreateNewRoom(cy);\ncy.percySnapshot('CreateNewRoom');\ncreateRoomFuncs.NavigateBack(cy);\nroomFuncs.NavigateBack(cy);\ndashboardFuncs.NavigateToClients(cy);\nclientFuncs.NavigateToCreateClient(cy);\ncy.percySnapshot('CreateNewClient');\ncreateClientFuncs.NavigateBack(cy);\nclientFuncs.NavigateBack(cy);\ndashboardFuncs.Logout(cy);\ncy.wait(1000);\ncy.percySnapshot('LogOut');",
+              "err": {},
+              "uuid": "46650609-e557-48ec-b71d-99b813efa3e1",
+              "parentUUID": "ae714241-331e-4162-bd68-02f03c8f0ec6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "46650609-e557-48ec-b71d-99b813efa3e1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7099,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
