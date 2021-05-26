@@ -1,0 +1,31 @@
+2021-05-26 21:34:54,990 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2021-05-26 21:34:55,010 INFO o.a.j.JMeter: Loading user properties from: /home/philip/apache-jmeter-5.4.1/bin/user.properties
+2021-05-26 21:34:55,011 INFO o.a.j.JMeter: Loading system properties from: /home/philip/apache-jmeter-5.4.1/bin/system.properties
+2021-05-26 21:34:55,020 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-05-26 21:34:55,020 INFO o.a.j.JMeter: Version 5.4.1
+2021-05-26 21:34:55,021 INFO o.a.j.JMeter: java.version=1.8.0_292
+2021-05-26 21:34:55,021 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-05-26 21:34:55,021 INFO o.a.j.JMeter: os.name=Linux
+2021-05-26 21:34:55,021 INFO o.a.j.JMeter: os.arch=amd64
+2021-05-26 21:34:55,022 INFO o.a.j.JMeter: os.version=5.8.0-53-generic
+2021-05-26 21:34:55,022 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-05-26 21:34:55,022 INFO o.a.j.JMeter: java.awt.headless=true
+2021-05-26 21:34:55,022 INFO o.a.j.JMeter: Max memory     =2269118464
+2021-05-26 21:34:55,022 INFO o.a.j.JMeter: Available Processors =3
+2021-05-26 21:34:55,028 INFO o.a.j.JMeter: Default Locale=English (United States)
+2021-05-26 21:34:55,028 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2021-05-26 21:34:55,029 INFO o.a.j.JMeter: JMeterHome=/home/philip/apache-jmeter-5.4.1
+2021-05-26 21:34:55,029 INFO o.a.j.JMeter: user.dir  =/home/philip/Project/automation-cicd-philip_widerstrom
+2021-05-26 21:34:55,029 INFO o.a.j.JMeter: PWD       =/home/philip/Project/automation-cicd-philip_widerstrom
+2021-05-26 21:34:55,029 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: philip-VirtualBox FullName: philip-VirtualBox
+2021-05-26 21:34:55,036 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/philip/Project/automation-cicd-philip_widerstrom/html-reports'
+2021-05-26 21:34:55,037 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.config.ConfigurationException: The file /home/philip/Project/automation-cicd-philip_widerstrom/login-logout.jmx doesn't exist or can't be opened
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1017) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_292]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_292]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_292]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_292]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]

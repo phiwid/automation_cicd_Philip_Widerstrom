@@ -22,7 +22,7 @@ describe('Regression Test suite', function(){
         indexFuncs.checkTitleOfIndexPage(cy)
     })
 
-    it.only('#1 Login & log out with existing user', function(){      
+    it('#1 Login & log out with existing user', function(){      
         // Login with existing user  
         indexFuncs.loginWithValidUser(cy)
         // Controll existing header and title
