@@ -56,9 +56,21 @@ pipeline {
              stage('Performance test') {
             steps {
                 sh '''
-                
+                    cd performance-tests/
+                    rm test1.csv -Rf
+                    rm html-reports/ -Rf
+                    jmeter -n -t login-logout.jmx -l test1.csv -e -o html-reports/
                 '''
-                //     jmeter -n -t login.logout.jmx -l test1.csv -e -0 html-reports/
+                publishHTML([
+                    allowMissing: false,
+                     alwaysLinkToLastBuild: false,
+                      keepAll: false, 
+                      reportDir: 'performance-tests/html-reports', 
+                      reportFiles: 'index.html',
+                       reportName: 'Performance Report', 
+                       reportTitles: ''
+                ])
+                
             }
         }
     }
